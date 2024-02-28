@@ -28,17 +28,17 @@ int main()
 	try
 	{
 		Ball ball = Ball(x, y, z, radius);
+		cout << "Square: " << ball.get_square() << endl;
+		cout << "Volume: " << ball.get_volume() << endl;
+		cout << "------" << endl;
+		cout << center.ToString() << endl;
 	}
-	catch (std::logic_error& ex)
+	catch (logic_error& ex)
 	{
 		cerr << ex.what() << endl;
 		exit(0);
 	}
-	Ball ball = Ball(x, y, z, radius);
-	cout << "Square: " << ball.get_square() << endl;
-	cout << "Volume: " << ball.get_volume() << endl;
-	cout << "------" << endl;
-	cout << center.ToString() << endl;
+	
 	return 0;
 }
 
