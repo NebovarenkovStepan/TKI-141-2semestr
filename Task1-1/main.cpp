@@ -27,11 +27,12 @@ int main()
 	double z = center.get_z();
 	try
 	{
-		Ball(x, y, z, radius);
+		Ball ball = Ball(x, y, z, radius);
 	}
 	catch (std::logic_error& ex)
 	{
 		cerr << ex.what() << endl;
+		exit(0);
 	}
 	Ball ball = Ball(x, y, z, radius);
 	cout << "Square: " << ball.get_square() << endl;

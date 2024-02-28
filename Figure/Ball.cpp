@@ -7,7 +7,7 @@ namespace figure
 	{
 		if (r < 0)
 		{
-			throw std::logic_error("Radius cannot be negative");
+			throw logic_error("Radius cannot be negative");
 		}
 		radius = r;
 	}
