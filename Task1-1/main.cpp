@@ -36,7 +36,6 @@ int main()
 	catch (logic_error& ex)
 	{
 		cerr << ex.what() << endl;
-		exit(0);
 	}
 	
 	return 0;
