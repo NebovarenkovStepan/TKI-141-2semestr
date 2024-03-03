@@ -1,4 +1,3 @@
-#pragma once
 #include <sstream>
 #include <ostream>
 #include "MathHelper.h"
@@ -6,28 +5,28 @@
 using namespace std;
 
 /**
-* @brief Объявляем свое имя.
+* @brief РћР±СЉСЏРІР»СЏРµРј СЃРІРѕРµ РёРјСЏ.
 */
 namespace approximation
 {
 	/**
-	* @brief Создаем структуру - точка.
+	* @brief РЎРѕР·РґР°РµРј СЃС‚СЂСѓРєС‚СѓСЂСѓ - С‚РѕС‡РєР°.
 	*/
 	struct Point : public MathHelper
 	{
 		double x, y;
 
 		/**
-		* @brief Создаем конструктор структуры.
-		* @param x - координата по x.
-		* @param y - координата по y.
+		* @brief РЎРѕР·РґР°РµРј РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃС‚СЂСѓРєС‚СѓСЂС‹.
+		* @param x - РєРѕРѕСЂРґРёРЅР°С‚Р° РїРѕ x.
+		* @param y - РєРѕРѕСЂРґРёРЅР°С‚Р° РїРѕ y.
 		*/
 		Point(const double& x, const double& y) : x{ x }, y{ y } {};
 
 		/**
-		* @brief Переопределяем оператор сравнения.
-		* @param lha - первая точка.
-		* @param rha - вторая точка.
+		* @brief РџРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј РѕРїРµСЂР°С‚РѕСЂ СЃСЂР°РІРЅРµРЅРёСЏ.
+		* @param lha - РїРµСЂРІР°СЏ С‚РѕС‡РєР°.
+		* @param rha - РІС‚РѕСЂР°СЏ С‚РѕС‡РєР°.
 		*/
 		friend bool operator<=>(const Point& lha, const Point& rha)
 		{

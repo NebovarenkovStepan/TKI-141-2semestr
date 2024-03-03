@@ -8,11 +8,17 @@ using namespace std;
 using namespace approximation;
 
 /**
- * @brief Функция  создающая точку.
+ * @brief Функция, создающая точку.
+ * @param n - номер точки.
  * @return Возвращает точку.
  */
 Point get_point(int n);
 
+/**
+ * @brief Функция, сравнивающая текущую и предыдущую точки.
+ * @param point - текущая точка.
+ * @param prev_point - предыдущая точка.
+ */
 void compare(const Point point, const Point prev_point);
 
 int main()

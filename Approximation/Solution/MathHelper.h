@@ -6,11 +6,11 @@ namespace approximation
     {
     public:
         /**
-       @brief Метод сравнения двух вещественных чисел с заданной точностью.
-       @param lha Первое число.
-       @param rha Второе число.
-       @param precision Точность сравнения.
-       @return true, если \a lha и \a rha равны.
+       @brief РњРµС‚РѕРґ СЃСЂР°РІРЅРµРЅРёСЏ РґРІСѓС… РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР» СЃ Р·Р°РґР°РЅРЅРѕР№ С‚РѕС‡РЅРѕСЃС‚СЊСЋ.
+       @param lha РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ.
+       @param rha Р’С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ.
+       @param precision РўРѕС‡РЅРѕСЃС‚СЊ СЃСЂР°РІРЅРµРЅРёСЏ.
+       @return true, РµСЃР»Рё \a lha Рё \a rha СЂР°РІРЅС‹.
        */
         static bool are_equal(
             const double lha,
@@ -18,14 +18,13 @@ namespace approximation
             const double precision);
 
         /**
-       @brief Метод сравнения двух вещественных чисел с точностью по умолчанию.
-       @param lha Первое число.
-       @param rha Второе число.
-       @return true, если \a lha и \a rha равны.
+       @brief РњРµС‚РѕРґ СЃСЂР°РІРЅРµРЅРёСЏ РґРІСѓС… РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР» СЃ С‚РѕС‡РЅРѕСЃС‚СЊСЋ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ.
+       @param lha РџРµСЂРІРѕРµ С‡РёСЃР»Рѕ.
+       @param rha Р’С‚РѕСЂРѕРµ С‡РёСЃР»Рѕ.
+       @return true, РµСЃР»Рё \a lha Рё \a rha СЂР°РІРЅС‹.
        */
         static bool are_equal(
             const double lha,
             const double rha);
     };
 }
-
