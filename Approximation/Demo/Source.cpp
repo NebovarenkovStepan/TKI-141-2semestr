@@ -21,10 +21,26 @@ Point get_point(int n);
  */
 void compare(const Point point, const Point prev_point);
 
+Point findPoint(std::vector<Point>& points) 
+{
+	double sumX = 0, sumY = 0;
+
+	for (const Point& p : points) {
+		sumX += p.x;
+		sumY += p.y;
+	}
+
+	Point newPoint(0, 0);
+	newPoint.x = sumX / points.size();
+	newPoint.y = sumY / points.size();
+
+	return newPoint;
+}
+
 int main()
 {
 	int n = 0;
-	cout << "Enter amount of points(>3): ";
+	cout << "Enter amount of points(>=3): ";
 	cin >> n;
 	try
 	{

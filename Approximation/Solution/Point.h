@@ -30,7 +30,7 @@ namespace approximation
 		*/
 		friend bool operator<=>(const Point& lha, const Point& rha)
 		{
-			if (less<double>()(lha.x, rha.x) and (not(are_equal(lha.y, rha.y))))
+			if (less<double>()(lha.x, rha.x))
 			{
 				return true;
 			}
