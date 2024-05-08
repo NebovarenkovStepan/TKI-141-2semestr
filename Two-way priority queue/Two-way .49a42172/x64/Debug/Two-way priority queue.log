@@ -1,0 +1,4 @@
+﻿  main.cpp
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __cdecl queue::Pair<int,int>::Pair<int,int>(int,int)" (??0?$Pair@HH@queue@@QEAA@HH@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: int __cdecl queue::Pair<int,int>::first(void)const " (?first@?$Pair@HH@queue@@QEBAHXZ) в функции main.
+E:\Task1-1\Two-way priority queue\x64\Debug\Two-way priority queue.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
